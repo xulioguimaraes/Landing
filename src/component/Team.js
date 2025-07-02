@@ -104,7 +104,7 @@ export default class Team extends Component {
             {/* Developer Profile */}
             <Row className="justify-content-center">
               <Col lg={10}>
-                <div className="bg-white rounded shadow p-5">
+                <div className="card rounded shadow p-5">
                   <Row className="align-items-center">
                     <Col lg={4} className="text-center mb-4 mb-lg-0">
                       <div className="position-relative">
@@ -200,7 +200,7 @@ export default class Team extends Component {
             <Row className="mb-5">
               {specifications.map((spec, index) => (
                 <Col lg={6} md={6} key={index}>
-                  <div className="bg-white rounded shadow p-4 mb-4 h-100">
+                  <div className="card rounded shadow p-4 mb-4 h-100">
                     <div className="d-flex align-items-center mb-4">
                       <div className="icon-mono bg-soft-primary rounded p-3 me-3">
                         <FeatherIcon icon={spec.icon} className="icon-md text-primary" />
@@ -211,7 +211,7 @@ export default class Team extends Component {
                       {spec.details.map((detail, idx) => (
                         <div key={idx} className="d-flex justify-content-between align-items-center py-2 border-bottom border-light">
                           <span className="text-muted">{detail.label}:</span>
-                          <strong className="text-dark">{detail.value}</strong>
+                          <strong>{detail.value}</strong>
                         </div>
                       ))}
                     </div>
@@ -223,7 +223,7 @@ export default class Team extends Component {
             {/* Compatibility Matrix */}
             <Row className="justify-content-center">
               <Col lg={10}>
-                <div className="bg-white rounded shadow p-4">
+                <div className="card rounded shadow p-4">
                   <div className="text-center mb-4">
                     <h4 className="mb-3">🚀 Compatibilidade com Aplicativos</h4>
                     <p className="text-muted">
@@ -234,8 +234,8 @@ export default class Team extends Component {
                     {compatibilityMatrix.map((app, index) => (
                       <Col lg={3} md={4} sm={6} key={index}>
                         <div style={{
-                          height: "145px",
-                        }} className="text-center p-3 mb-3 border rounded">
+                          height: "145px"
+                        }} className="text-center p-3 mb-3 border rounded bg-light">
                           <div className="mb-2">
                             <span className="h4">{app.status}</span>
                           </div>
