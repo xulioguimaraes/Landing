@@ -142,15 +142,16 @@
             }
         }
     }
-        .rocket-image {
-            .img-dark {
-                display: inline-block;
-            }
-    
-            .img-light {
-                display: none;
-            }
+
+    .rocket-image {
+        .img-dark {
+            display: inline-block;
         }
+
+        .img-light {
+            display: none;
+        }
+    }
 }
 
 // ***** Hero 6 *****//
@@ -170,7 +171,7 @@
         font-size: 48px;
     }
 
-    .form-bg{
+    .form-bg {
         background-color: var(--bs-bg-light);
     }
 }
@@ -313,32 +314,12 @@
         background: var(--bs-secondary-bg) !important;
     }
 
-    .hero-3 {
-        background-image: url(../images/hero-3-bg-dark.png) !important;
-    }
 
-    .hero-4{
-        .bg-overlay-img{
-            background-image: url(../images/hero-4-overlay-dark.png) !important;
-        }
-    }
 
-    .hero-5{
-        background-image: url(../images/hero-5-bg-dark.png) !important;
-
-        .rocket-image{
-            .img-dark{
-                display: none !important;
-            }
-            .img-light{
-                display: inline-block !important;
-            }
-        }
-    }
 }
 
-[data-bs-theme="dark"][class="home-4"]{
-    .navbar.navbar-custom{
+[data-bs-theme="dark"][class="home-4"] {
+    .navbar.navbar-custom {
         background-color: var(--bs-navbar-bg) !important;
     }
 }

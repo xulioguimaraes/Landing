@@ -57,16 +57,7 @@ class Section extends Component {
                     <FeatherIcon icon="download" className="icon-sm me-2" />
                     Download Gratuito
                   </a>
-                  <div className="d-inline-block" onClick={this.openModal}>
-                    <Link to="#" className="video-play-icon text-white d-flex align-items-center">
-                      <span className="play-icon-circle me-3">
-                        <i>
-                          <FeatherIcon icon="play" className="icon-sm icon" />{" "}
-                        </i>
-                      </span>
-                      <span className="">Ver Demonstração</span>
-                    </Link>
-                  </div>
+
                 </div>
                 <div className="d-flex align-items-center text-white-70">
                   <FeatherIcon icon="check-circle" className="icon-sm text-success me-2" />

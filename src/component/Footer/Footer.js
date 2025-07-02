@@ -4,7 +4,7 @@ import { Container, Row, Col } from "reactstrap";
 import FeatherIcon from "feather-icons-react";
 
 //import images
-import logoDark from "../../assets/images/logo-dark.png";
+import logoDark from "../../assets/images/iconxg.png";
 
 class Footer extends Component {
   render() {
