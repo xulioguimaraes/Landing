@@ -52,7 +52,9 @@ class NavbarPage extends Component {
                 transform: "scale(1.8)",
                 transformOrigin: "left center"
               }} />
-              <span className="ms-2 ml-10 fw-bold text-white">XGBoard</span>
+              <span style={{
+                marginLeft: "2.5rem"
+              }} className="ms-2 ml-10 fw-bold text-white">XGBoard</span>
             </NavbarBrand>
             <NavbarToggler onClick={this.toggle}>
               <i>
