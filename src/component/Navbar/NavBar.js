@@ -47,8 +47,12 @@ class NavbarPage extends Component {
           <Container>
             {/* LOGO */}
             <NavbarBrand className="logo" href="/">
-              <img src={xgboardLogo} alt="XGBoard" height="28" />
-              <span className="ms-2 fw-bold text-white">XGBoard</span>
+              <img src={xgboardLogo} alt="XGBoard" height="40" style={{
+                maxHeight: "40px",
+                transform: "scale(1.8)",
+                transformOrigin: "left center"
+              }} />
+              <span className="ms-2 ml-10 fw-bold text-white">XGBoard</span>
             </NavbarBrand>
             <NavbarToggler onClick={this.toggle}>
               <i>

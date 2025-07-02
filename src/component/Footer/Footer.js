@@ -8,11 +8,6 @@ import logoDark from "../../assets/images/logo-dark.png";
 
 class Footer extends Component {
   render() {
-    // Estilos para os links do footer
-    const footerLinkStyle = {
-      transition: 'color 0.3s ease',
-    };
-
     const footerLinks = {
       product: [
         { name: "Home", link: "#home" },
@@ -77,10 +72,7 @@ class Footer extends Component {
                     <li key={index}>
                       <Link
                         to={item.link}
-                        className="text-white-50 text-decoration-none footer-link"
-                        style={footerLinkStyle}
-                        onMouseEnter={(e) => e.target.style.color = '#fff'}
-                        onMouseLeave={(e) => e.target.style.color = 'rgba(255,255,255,0.5)'}
+                        className="text-white-50 text-decoration-none"
                       >
                         <i className="mdi mdi-chevron-right me-1"></i>
                         {item.name}
@@ -100,10 +92,7 @@ class Footer extends Component {
                           href={item.link}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-white-50 text-decoration-none footer-link"
-                          style={footerLinkStyle}
-                          onMouseEnter={(e) => e.target.style.color = '#fff'}
-                          onMouseLeave={(e) => e.target.style.color = 'rgba(255,255,255,0.5)'}
+                          className="text-white-50 text-decoration-none"
                         >
                           <i className="mdi mdi-chevron-right me-1"></i>
                           {item.name}
@@ -111,10 +100,7 @@ class Footer extends Component {
                       ) : (
                         <Link
                           to={item.link}
-                          className="text-white-50 text-decoration-none footer-link"
-                          style={footerLinkStyle}
-                          onMouseEnter={(e) => e.target.style.color = '#fff'}
-                          onMouseLeave={(e) => e.target.style.color = 'rgba(255,255,255,0.5)'}
+                          className="text-white-50 text-decoration-none"
                         >
                           <i className="mdi mdi-chevron-right me-1"></i>
                           {item.name}
@@ -134,10 +120,7 @@ class Footer extends Component {
                         href={item.link}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-white-50 text-decoration-none footer-link"
-                        style={footerLinkStyle}
-                        onMouseEnter={(e) => e.target.style.color = '#fff'}
-                        onMouseLeave={(e) => e.target.style.color = 'rgba(255,255,255,0.5)'}
+                        className="text-white-50 text-decoration-none"
                       >
                         <i className="mdi mdi-chevron-right me-1"></i>
                         {item.name}
@@ -173,39 +156,7 @@ class Footer extends Component {
                 </div>
               </Col>
 
-              <Col sm={6} className="mt-4 mt-sm-0 pt-2 pt-sm-0">
-                <ul className="list-unstyled social-icon social-icon-sm mb-0 text-sm-end">
-                  {socialLinks.map((social, index) => (
-                    <li key={index} className="list-inline-item">
-                      {social.link.startsWith('http') ? (
-                        <a
-                          href={social.link}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="rounded text-white-50"
-                          title={social.name}
-                          style={footerLinkStyle}
-                          onMouseEnter={(e) => e.target.style.color = '#fff'}
-                          onMouseLeave={(e) => e.target.style.color = 'rgba(255,255,255,0.5)'}
-                        >
-                          <FeatherIcon icon={social.icon} className="fea icon-sm fea-social" />
-                        </a>
-                      ) : (
-                        <Link
-                          to={social.link}
-                          className="rounded text-white-50"
-                          title={social.name}
-                          style={footerLinkStyle}
-                          onMouseEnter={(e) => e.target.style.color = '#fff'}
-                          onMouseLeave={(e) => e.target.style.color = 'rgba(255,255,255,0.5)'}
-                        >
-                          <FeatherIcon icon={social.icon} className="fea icon-sm fea-social" />
-                        </Link>
-                      )}
-                    </li>
-                  ))}
-                </ul>
-              </Col>
+
             </Row>
 
             <Row className="mt-3">
@@ -222,10 +173,7 @@ class Footer extends Component {
                         href="https://github.com/xulioguimaraes/XGBoard"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-white-50 small text-decoration-none footer-link"
-                        style={footerLinkStyle}
-                        onMouseEnter={(e) => e.target.style.color = '#fff'}
-                        onMouseLeave={(e) => e.target.style.color = 'rgba(255,255,255,0.5)'}
+                        className="text-white-50 small text-decoration-none"
                       >
                         Se gostou, deixe uma estrela!
                       </a>
