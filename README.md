@@ -21,6 +21,19 @@ npm run build    # gera dist/
 npm run preview  # serve dist/ localmente
 ```
 
+## Google Analytics
+
+A landing carrega `gtag.js` automaticamente quando `VITE_GA_ID` está definida.
+
+**Local** (`.env`, ignorado pelo git):
+```bash
+VITE_GA_ID=G-XXXXXXXXXX
+```
+
+**Produção (Vercel)**: dashboard do projeto → Settings → Environment Variables → adicione `VITE_GA_ID` com o Measurement ID. Faça um redeploy.
+
+Sem a variável definida, o componente `<Analytics />` é no-op (não carrega nenhum script).
+
 ## Estrutura
 
 ```
