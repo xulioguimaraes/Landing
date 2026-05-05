@@ -35,12 +35,10 @@ export function Hero() {
         <div className="mt-10 flex flex-col items-center gap-3 sm:flex-row">
           <Button asChild size="lg" className="gap-2">
             <a
-              href="https://github.com/xulioguimaraes/XGBoard/releases/latest"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="https://github.com/xulioguimaraes/XGBoard/releases/latest/download/XGBoard-v2.0-Installer.dmg"
             >
               <Download className="h-5 w-5" />
-              Baixar para macOS
+              Baixar DMG (574 KB)
               <ArrowRight className="h-4 w-4" />
             </a>
           </Button>
@@ -54,6 +52,16 @@ export function Hero() {
               Código no GitHub
             </a>
           </Button>
+        </div>
+
+        <div className="mt-3 text-xs text-muted-foreground">
+          Prefere ZIP?{" "}
+          <a
+            href="https://github.com/xulioguimaraes/XGBoard/releases/latest/download/XGBoard-v2.0-macOS.zip"
+            className="font-medium text-primary underline-offset-4 hover:underline"
+          >
+            Baixar XGBoard-v2.0-macOS.zip
+          </a>
         </div>
 
         <div className="mt-6 flex items-center gap-4 text-xs text-muted-foreground">

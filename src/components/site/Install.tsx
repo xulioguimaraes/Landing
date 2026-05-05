@@ -6,17 +6,20 @@ const steps = [
     icon: Download,
     title: "Baixar",
     description:
-      "Clone o repositório ou baixe a release mais recente. Não há dependências externas.",
-    code: `git clone https://github.com/xulioguimaraes/XGBoard.git
-cd XGBoard`,
+      "Baixe o instalador da última release. O build é gerado a partir do código deste repositório.",
+    code: `# DMG
+XGBoard-v2.0-Installer.dmg
+
+# ou ZIP
+XGBoard-v2.0-macOS.zip`,
   },
   {
     icon: Terminal,
-    title: "Compilar e instalar",
+    title: "Instalar",
     description:
-      "Build local com xcodebuild e instalação em /Applications via script consolidado.",
-    code: `./scripts/build_simple.sh
-./clean_install.sh`,
+      "Abra o DMG, arraste para Applications, ejete. Ou extraia o ZIP e mova para Applications.",
+    code: `open ~/Downloads/XGBoard-v2.0-Installer.dmg
+# arraste XGBoard.app para Applications`,
   },
   {
     icon: KeyRound,
