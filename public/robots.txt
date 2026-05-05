@@ -1,9 +1,0 @@
-# https://www.robotstxt.org/robotstxt.html
-User-agent: *
-Allow: /
-
-# XGBoard - Gerenciador de Clipboard para macOS
-# Site: https://xgboard.vercel.app/
-# GitHub: https://github.com/xulioguimaraes/XGBoard
-
-Sitemap: https://xgboard.vercel.app/sitemap.xml

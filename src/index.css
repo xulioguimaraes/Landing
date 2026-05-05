@@ -1,13 +1,81 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 229 30% 12%;
+    --card: 0 0% 100%;
+    --card-foreground: 229 30% 12%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 229 30% 12%;
+    --primary: 229 49% 59%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 229 30% 96%;
+    --secondary-foreground: 229 30% 20%;
+    --muted: 229 20% 96%;
+    --muted-foreground: 229 12% 45%;
+    --accent: 229 49% 95%;
+    --accent-foreground: 229 49% 30%;
+    --destructive: 0 70% 55%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 229 20% 90%;
+    --input: 229 20% 90%;
+    --ring: 229 49% 59%;
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    --background: 229 30% 7%;
+    --foreground: 229 20% 95%;
+    --card: 229 28% 11%;
+    --card-foreground: 229 20% 95%;
+    --popover: 229 28% 11%;
+    --popover-foreground: 229 20% 95%;
+    --primary: 229 70% 70%;
+    --primary-foreground: 229 30% 10%;
+    --secondary: 229 24% 16%;
+    --secondary-foreground: 229 20% 95%;
+    --muted: 229 22% 14%;
+    --muted-foreground: 229 12% 65%;
+    --accent: 229 30% 18%;
+    --accent-foreground: 229 70% 80%;
+    --destructive: 0 65% 50%;
+    --destructive-foreground: 229 20% 95%;
+    --border: 229 22% 18%;
+    --input: 229 22% 18%;
+    --ring: 229 70% 70%;
+  }
+
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  ::selection {
+    background: hsl(var(--primary) / 0.25);
+  }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@layer utilities {
+  .gradient-radial {
+    background: radial-gradient(
+      ellipse 80% 60% at 50% 0%,
+      hsl(var(--primary) / 0.15),
+      transparent 70%
+    );
+  }
+  .gradient-grid {
+    background-image:
+      linear-gradient(to right, hsl(var(--border) / 0.6) 1px, transparent 1px),
+      linear-gradient(to bottom, hsl(var(--border) / 0.6) 1px, transparent 1px);
+    background-size: 48px 48px;
+    mask-image: radial-gradient(ellipse 60% 50% at 50% 0%, #000, transparent);
+  }
 }
