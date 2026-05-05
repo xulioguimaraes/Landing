@@ -1,4 +1,3 @@
-import { Analytics } from "@/components/Analytics"
 import { Header } from "@/components/site/Header"
 import { Hero } from "@/components/site/Hero"
 import { AppDemo } from "@/components/site/AppDemo"
@@ -9,7 +8,6 @@ import { Footer } from "@/components/site/Footer"
 function App() {
   return (
     <div className="relative min-h-screen bg-background">
-      <Analytics />
       <Header />
       <main>
         <Hero />
